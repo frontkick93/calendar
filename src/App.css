@@ -54,7 +54,16 @@ div h1{
   display: flex;
   align-items: center;
   justify-content: center;
-  
+    gap: 1rem; /* spacing between items */
+    list-style-type: none; /* removes bullet points */
+    padding: 0;
+}
+
+@media (max-width: 768px){
+  #nvabar{
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 #navbar li{
