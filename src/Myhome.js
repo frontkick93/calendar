@@ -33,7 +33,7 @@ function MyHome(){
 
     useEffect(() => {
     const fetchList = async () => {
-        const response = await fetch('http://localhost:3002/Mynewdata')
+        const response = await fetch('http://localhost:8090/Mynewdata')
         const data = await response.json();
         setData(data.query1);
         

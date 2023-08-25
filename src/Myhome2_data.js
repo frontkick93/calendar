@@ -14,7 +14,7 @@ function Myhome2_data(){
     useEffect(() => {
 
         //Make an HTTP request to fetch data
-        axios.get('http://localhost:3002/Mynewdata')
+        axios.get('http://localhost:8090/Mynewdata')
         .then(response => {
         const mydata = response.data;
         console.log(response.data)

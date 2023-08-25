@@ -12,7 +12,7 @@ function MyHome4() {
         useEffect(() => {
             const fetchData = async () => {
                 try {
-                    const response = await axios.get('http://localhost:3002/Mynewdata');
+                    const response = await axios.get('http://localhost:8090/Mynewdata');
                     const data = response.data.query1;
                     console.log(data)
                     // Assume data has fields "label" and "value"

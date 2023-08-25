@@ -27,7 +27,7 @@ const[data, setData] = useState([]);
 
 useEffect(() => {
   
-  axios.get('http://localhost:3002/Mynewdata')
+  axios.get('http://localhost:8090/Mynewdata')
   .then(response => {
     console.log(response.data)
     //setEvent(response.data);
