@@ -12,6 +12,8 @@ const dbconfig = {
 
 const pool = new sql.ConnectionPool(dbconfig);
 
+app.use(cors());
+
 // set up routes
 app.get('/Mynewdata', cors(), (req, res) => {
     pool.connect((err) => {
