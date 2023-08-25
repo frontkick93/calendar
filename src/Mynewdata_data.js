@@ -47,5 +47,5 @@ app.get('/Mynewdata', cors(), (req, res) => {
 })
 
 
-const port = process.env.PORT || 3002;
+const port = process.env.PORT || 8090;
 app.listen(port, () => console.log(`Server running on port ${port}`));

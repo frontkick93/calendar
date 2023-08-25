@@ -9,7 +9,7 @@ const Mynewdata = () => {
 
         //Make an HTTP request to fetch data
         const fetchList = async () => {
-            const response = await fetch('http://localhost:3002/Mynewdata')
+            const response = await fetch('http://localhost:8090/Mynewdata')
             const data = await response.json();
             setData(data.query1);
             
@@ -21,7 +21,7 @@ useEffect(() => {
 
     //Make an HTTP request to fetch data
     const fetchList2 = async () => {
-        const response2 = await fetch('http://localhost:3002/Mynewdata')
+        const response2 = await fetch('http://localhost:8090/Mynewdata')
         const data2 = await response2.json();
         setData2(data2.query2);
         
